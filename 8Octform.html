@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input[type="text"],[type="password"], input[type="submit"],input[type="reset"]
+        {
+            background-color: lightpink;
+            border: 2px solid blue;
+            color: darkcyan;
+            padding: 8px;
+            border-radius: 20px;
+
+        }
+
+        input[type="text"]:focus,[type="password"]:focus
+        {
+            background-color: yellow;
+
+
+        }
+
+        input[type="submit"]:hover,input[type="reset"]:hover
+        {
+
+            transform: scale(1.4);
+            transition: 2s;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <form action="abc.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Write your name" size="40" maxlength="4">
+
+        <br><br>
+
+
+        <label for="email">Write Email:</label>
+        <input type="email" id="email" name="email" placeholder="Write emaild id">
+
+        <br><br>
+
+        <label for="pass">Write Email:</label>
+        <input type="password" id="pass" name="pass" placeholder="Enter Passowrd">
+
+        <br><br>
+
+       <label for="review" style="float: left;margin-top: 40px;">Write a Review:</label> 
+        <textarea name="review" id="review" rows="7" cols="40"></textarea>
+
+        <br><br>
+
+        <label for="hobby">Choose Hobby:</label>
+        <input type="checkbox" id="hobby" name="hobby" value="singing">Singing
+        <input type="checkbox" id="hobby" name="hobby" value="cooking" checked>Cooking
+        <input type="checkbox" id="hobby" name="hobby" value="dancing" >Dancing
+
+        <br><br>
+
+        <label for="course">Choose your course:</label>
+        <input type="radio" name="course" id="btech" value="btech">
+        <label for="btech">B.tech</label>
+
+        <input type="radio" name="course" id="bca" value="bca">
+        <label for="bca">BCA</label>
+
+        <input type="radio" name="course" id="bpt" value="bpt">
+        <label for="bpt">BPT</label>
+
+        <br><br>
+
+        <label for="state">Choose your state:</label>
+        <select name="state" id="state" size="3" multiple>
+            <option value="selectstate">Select State</option>
+            <option value="punjab">Punjab</option>
+            <option value="karn">Karnataka</option>
+            <option value="kerala" selected>Kerala</option>
+            <option value="haryana">Haryana</option>
+        </select>
+
+        <br><br>
+        <label for="filesel">Upload a file</label>
+        <input type="file" name="filesel" id="filesel">
+
+        <br><br>
+
+        <input type="submit" name="subbutton" id="subbutton" value="Submit Form">
+         <input type="reset" name="reset" id="reset" value="reset Form">
+         <br> <br>
+         <input type="button" name="button" id="button" value="add button">
+
+        <br><br>
+        <input type="image" name="imgbutton" id="imgbutton" src="OK image.jpg" width="40" height="40">
+
+    </form>
+</body>
+</html>

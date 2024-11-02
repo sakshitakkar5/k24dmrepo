@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Text Outside Textarea</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center;    /* Center horizontally */
+            height: 200px;          /* Set height for centering */
+            justify-content: center; /* Center vertically */
+        }
+        .label {
+            margin-bottom: 10px; /* Space between label and textarea */
+            font-size: 18px; /* Adjust font size if needed */
+        }
+        textarea {
+            width: 300px; /* Adjust width */
+            height: 100px; /* Adjust height */
+            padding: 10px; /* Padding for better appearance */
+            resize: none; /* Disable resizing if desired */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <label class="label" for="myTextarea">Your Text:</label>
+    <textarea id="myTextarea"></textarea>
+</div>
+
+</body>
+</html>
