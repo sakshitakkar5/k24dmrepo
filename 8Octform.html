@@ -34,10 +34,10 @@
     </style>
 </head>
 <body>
-    <form action="abc.php" method="post">
+    <form action="" onsubmit="return validation()">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Write your name" size="40" maxlength="4">
-
+        <span id="err1"></span>
         <br><br>
 
 
@@ -99,5 +99,30 @@
         <input type="image" name="imgbutton" id="imgbutton" src="OK image.jpg" width="40" height="40">
 
     </form>
+
+
+    <script>
+        function validation(){
+
+            var valid=true;
+
+
+            if(document.getElementById("name").value=="")
+        {
+                document.getElementById("err1").innerHTML="Please enter the name";
+                valid=false;
+        }
+        // else{
+
+        //     document.getElementById("err1").innerHTML="";
+        //     valid=true;
+        // }
+
+
+        return valid;
+        }
+
+
+    </script>
 </body>
 </html>
